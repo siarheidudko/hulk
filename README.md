@@ -17,11 +17,11 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - url
   
 - Customize
-  - you_link - link to you server, formated "https://test.com/"
-  - this_data - data to request (not use for GET request)
-  - this_method - type request (GET, POST and others)
-  - req_total - number of requests for attack
-  - req_in_min - limit download of requests per minute
+  - set_you_link - link to you server, formated "https://test.com/"
+  - set_this_data - data to request (not use for GET request)
+  - set_this_method - type request (GET, POST and others)
+  - set_req_total - number of requests for attack
+  - set_req_in_min - limit download of requests per minute
 
 ## RU  
 
@@ -36,11 +36,11 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - url
 
 - Настройка
-  - you_link - ссылка для атаки "https://test.com/"
-  - this_data - данные REST запроса (могут быть пустыми)
-  - this_method - вид запроса (GET, POST и др.)
-  - req_total - общее число запросов к серверу
-  - req_in_min - предел скорости запросов к серверу (запросов в минуту)
+  - set_you_link - ссылка для атаки "https://test.com/"
+  - set_this_data - данные REST запроса (могут быть пустыми)
+  - set_this_method - вид запроса (GET, POST и др.)
+  - set_req_total - общее число запросов к серверу
+  - set_req_in_min - предел скорости запросов к серверу (запросов в минуту)
   
 ## SCREENSHOTS
 
@@ -51,3 +51,13 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 - Вывод итоговой статистики/Output of summary statistics
 
 ![Screenshot_2](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_2.png)
+
+- Вот так это выглядит в CPanel атакуемого сервера (напомню, что убить сервер цели не было - потому атаки были не продолжительны)/This is how it looks in the CPanel of the attacked server (I recall that there was no goal to kill the server - therefore, the attacks were not long)
+
+![Screenshot_3](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_3.png)
+
+![Screenshot_4](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_4.png)
+
+![Screenshot_5](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_5.png)
+
+![Screenshot_6](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_6.png)

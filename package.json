@@ -1,0 +1,30 @@
+{
+  "name": "hulk",
+  "version": "1.0.0",
+  "description": "DoS Attack tools (only for testing yours service)",
+  "main": "hulk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siarheidudko/hulk/"
+  },
+  "keywords": [
+    "hulk.py",
+    "hulk.js",
+    "hulk",
+    "Attack",
+    "DoS",
+    "DDoS",
+    "testing"
+  ],
+  "author": "Siarhei Dudko",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.2.1",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "url": "^0.11.0"
+  }
+}

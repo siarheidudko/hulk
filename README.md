@@ -45,7 +45,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 ## SCREENSHOTS
 
 - Внешний вид атаки/Appearance of attack
-![Screenshot_1](https://github.com/siarheidudko/hulk/raw/img/Screenshot_1.png)
+![Screenshot_1](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_1.png)
 
 - Вывод итоговой статистики/Output of summary statistics
-![Screenshot_2](https://github.com/siarheidudko/hulk/raw/img/Screenshot_2.png)
+![Screenshot_2](https://github.com/siarheidudko/hulk/raw/master/img/Screenshot_2.png)

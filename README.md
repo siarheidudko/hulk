@@ -7,6 +7,7 @@ Quotation of the original file:
 "This tool is a dos tool that is meant to put heavy load on HTTP servers in 
 order to bring them to their knees by exhausting the resource pool, 
 its is meant for research purposes only and any malicious usage of this tool is prohibited."
+Originaly (python) author :  Barry Shteiman - http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/
 	
 Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 
@@ -26,8 +27,8 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 ## RU  
 
 Софт для DoS атаки на сервер. Исключительно для тестирования собственных продуктов. 
-Использование в противозаконных целях запрещено. Идея навеяна аналогичным скриптом на python.
-На основании её и реализовал в javascript(nodejs).
+Использование в противозаконных целях запрещено. Идея навеяна аналогичным скриптом на python(Barry Shteiman - http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/).
+На основании её и реализовал в javascript(nodejs). Плюшки асинхронного языка в комплекте.
 
 - Зависимости
   - http

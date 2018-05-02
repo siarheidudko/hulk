@@ -27,6 +27,33 @@ set_req_total = 20000,
 /* number of requests per minute */
 set_req_in_min = 10000;
 
+for(var i = 2; i < process.argv.length; i++){
+	if(typeof(process.argv[i]) !== 'undefined'){
+		if((process.argv.length === 7) || (i === 2)){
+			var j = i;
+		} else {
+			var j = i + 1;
+		}
+		switch (j){
+			case 2:
+				set_you_link = process.argv[i];
+				break;
+			case 3:
+				set_this_data = process.argv[i];
+				break;
+			case 4:
+				set_this_method = process.argv[i];
+				break;
+			case 5:
+				set_req_total = parseInt(process.argv[i], 10);
+				break;
+			case 6:
+				set_req_in_min = parseInt(process.argv[i], 10);
+				break;
+		}
+	}
+}
+
 hulk(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min);
 
 function hulk(you_link, this_data, this_method, req_total, req_in_min){

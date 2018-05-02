@@ -19,6 +19,11 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - url
   - fs
   
+- Install:
+	```
+		npm install @sergdudko/hulk --save
+	```
+  
 - Module connection (examples of using):
   - hulk.core - basic function of the module
 	```
@@ -40,7 +45,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - hulk.func - function for working with callback function (return the output array of the console to callback)
 	```
 		var hulkFunc = require(__dirname + '/index.js').func;
-		hulkFunc('http://alenmoroz.tk/', '', 'GET', 20, 100, console.log);
+		hulkFunc('http://link.com', '', 'GET', 20, 100, console.log);
 	```
   
 - Setting (function arguments for hulk.core, hulk.file, hulk.func)
@@ -108,6 +113,11 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - url
   - fs
   
+- Установка:
+	```
+		npm install @sergdudko/hulk --save
+	```
+  
 - Подключение модуля (примеры использования):
   - hulk.core - основная функция модуля
 	```
@@ -129,7 +139,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - hulk.func - функция для работы с каллбэк-функцией (вернет массив вывода консоли в каллбэк)
 	```
 		var hulkFunc = require(__dirname + '/index.js').func;
-		hulkFunc('http://alenmoroz.tk/', '', 'GET', 20, 100, console.log);
+		hulkFunc('http://link.com', '', 'GET', 20, 100, console.log);
 	```
 
 - Настройка (аргументы функции hulk.core, hulk.file, hulk.func)

@@ -1,8 +1,8 @@
 {
-  "name": "hulk",
+  "name": "@sergdudko/hulk",
   "version": "1.0.0",
   "description": "DoS Attack tools (only for testing yours service)",
-  "main": "hulk.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

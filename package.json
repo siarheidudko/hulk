@@ -1,6 +1,6 @@
 {
 	"name": "@sergdudko/hulk",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "DoS Attack tools (only for testing yours service)",
 	"main": "index.js",
 	"scripts": {
@@ -20,7 +20,7 @@
 		"testing"
 	],
 	"links": {
-			"npm": "https://www.npmjs.com/package/yargs",
+			"npm": "https://www.npmjs.com/package/@sergdudko/hulk",
 			"homepage": "https://github.com/siarheidudko/hulk/#README",
 			"repository": "https://github.com/siarheidudko/hulk/",
 			"bugs": "https://github.com/siarheidudko/hulk/issues"

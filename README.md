@@ -27,24 +27,24 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 - Module connection (examples of using):
   - hulk.core - basic function of the module
 	```
-		var hulkCore = require(__dirname + '/index.js').core;
+		var hulkCore = require('@sergdudko/hulk').core;
 		hulkCore('http://link.com ', '', 'GET', 20, 100, log);
 	```
   - hulk.cli - function for working with the console (takes the arguments of the process for stdin and outputs stdout in console.log)
 	```
-		var hulkCli = require(__dirname + '/index.js').cli;
+		var hulkCli = require('@sergdudko/hulk').cli;
 		hulkCli();
 		
 		node you_script.js http://link.com dsdsdsds POST 100 1000
 	```
   - hulk.file - function for working with the log file
 	```
-		var hulkFile = require(__dirname + '/index.js').file;
+		var hulkFile = require('@sergdudko/hulk').file;
 		hulkFile('http://link.com', '', 'GET', 20, 100, __dirname + '/test.log');
 	```
   - hulk.func - function for working with callback function (return the output array of the console to callback)
 	```
-		var hulkFunc = require(__dirname + '/index.js').func;
+		var hulkFunc = require('@sergdudko/hulk').func;
 		hulkFunc('http://link.com', '', 'GET', 20, 100, console.log);
 	```
   
@@ -121,24 +121,24 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 - Подключение модуля (примеры использования):
   - hulk.core - основная функция модуля
 	```
-		var hulkCore = require(__dirname + '/index.js').core;
+		var hulkCore = require('@sergdudko/hulk').core;
 		hulkCore('http://link.com ', '', 'GET', 20, 100, log);
 	```
   - hulk.cli - функция для работы с консолью (принимает аргументы процесса за stdin и выводит stdout в console.log)
 	```
-		var hulkCli = require(__dirname + '/index.js').cli;
+		var hulkCli = require('@sergdudko/hulk').cli;
 		hulkCli();
 		
 		node you_script.js http://link.com dsdsdsds POST 100 1000
 	```
   - hulk.file - функция для работы с лог-файлом
 	```
-		var hulkFile = require(__dirname + '/index.js').file;
+		var hulkFile = require('@sergdudko/hulk').file;
 		hulkFile('http://link.com', '', 'GET', 20, 100, __dirname + '/test.log');
 	```
   - hulk.func - функция для работы с каллбэк-функцией (вернет массив вывода консоли в каллбэк)
 	```
-		var hulkFunc = require(__dirname + '/index.js').func;
+		var hulkFunc = require('@sergdudko/hulk').func;
 		hulkFunc('http://link.com', '', 'GET', 20, 100, console.log);
 	```
 

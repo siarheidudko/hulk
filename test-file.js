@@ -18,10 +18,4 @@
 
 var hulk = require(__dirname + '/index.js');
 
-hulk.cli();
-
-//hulk.file('http://alenmoroz.tk/', '', 'GET', 20, 100, __dirname + '/test.log');
-
-//hulk.core('http://alenmoroz.tk/', '', 'GET', 20, 100);
-
-//hulk.func('http://alenmoroz.tk/', '', 'GET', 20, 100, console.log);
+hulk.file('http://alenmoroz.tk/', '', 'GET', 5, 100, __dirname + '/test.log');

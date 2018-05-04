@@ -1,10 +1,10 @@
 {
 	"name": "@sergdudko/hulk",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "DoS Attack tools (only for testing yours service)",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo START HULK.CORE TEST && node test-core.js && echo START HULK.CLI TEST && node test-cli.js http://alenmoroz.tk GET 5 100 && echo START HULK.FILE TEST && node test-file.js && echo START HULK.FUNC TEST && node test-func.js"
 	},
 	"repository": {
 		"type": "git",

@@ -28,6 +28,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - hulk.core - basic function of the module
 	```
 		var hulkCore = require('@sergdudko/hulk').core;
+		//hulkCore(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, stdout);
 		hulkCore('http://link.com ', '', 'GET', 20, 100, log);
 	```
   - hulk.cli - function for working with the console (takes the arguments of the process for stdin and outputs stdout in console.log)
@@ -35,16 +36,18 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 		var hulkCli = require('@sergdudko/hulk').cli;
 		hulkCli();
 		
-		node you_script.js http://link.com dsdsdsds POST 100 1000
+		//node you_script.js http://link.com dsdsdsds POST 100 1000
 	```
   - hulk.file - function for working with the log file
 	```
 		var hulkFile = require('@sergdudko/hulk').file;
+		//hulkFile(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, path);
 		hulkFile('http://link.com', '', 'GET', 20, 100, __dirname + '/test.log');
 	```
   - hulk.func - function for working with callback function (return the output array of the console to callback)
 	```
 		var hulkFunc = require('@sergdudko/hulk').func;
+		//hulkFunc(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, stdout);
 		hulkFunc('http://link.com', '', 'GET', 20, 100, console.log);
 	```
   
@@ -54,7 +57,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - set_this_method - type request (GET, POST and others)
   - set_req_total - number of requests for attack
   - set_req_in_min - limit download of requests per minute
-  - stdout  (for hulk.core, hulk.func) - output function (console.log or write to file)
+  - stdout  (for hulk.core, hulk.func) - output function (console.log, write to file, your output function with a single incoming argument as a string)
   - path (for hulk.file) - path to the file for report output
   
 - Setting (process arguments for hulk.cli)
@@ -122,6 +125,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - hulk.core - основная функция модуля
 	```
 		var hulkCore = require('@sergdudko/hulk').core;
+		//hulkCore(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, stdout);
 		hulkCore('http://link.com ', '', 'GET', 20, 100, log);
 	```
   - hulk.cli - функция для работы с консолью (принимает аргументы процесса за stdin и выводит stdout в console.log)
@@ -129,16 +133,18 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 		var hulkCli = require('@sergdudko/hulk').cli;
 		hulkCli();
 		
-		node you_script.js http://link.com dsdsdsds POST 100 1000
+		//node you_script.js http://link.com dsdsdsds POST 100 1000
 	```
   - hulk.file - функция для работы с лог-файлом
 	```
 		var hulkFile = require('@sergdudko/hulk').file;
+		//hulkFile(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, path);
 		hulkFile('http://link.com', '', 'GET', 20, 100, __dirname + '/test.log');
 	```
   - hulk.func - функция для работы с каллбэк-функцией (вернет массив вывода консоли в каллбэк)
 	```
 		var hulkFunc = require('@sergdudko/hulk').func;
+		//hulkFunc(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, stdout);
 		hulkFunc('http://link.com', '', 'GET', 20, 100, console.log);
 	```
 
@@ -148,7 +154,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
   - set_this_method - вид запроса (GET, POST и др.)
   - set_req_total - общее число запросов к серверу
   - set_req_in_min - предел скорости запросов к серверу (запросов в минуту)
-  - stdout (для hulk.core, hulk.func) - функция вывода (console.log или запись в файл)
+  - stdout (для hulk.core, hulk.func) - функция вывода (console.log, запись в файл, ваша функция вывода с единственным входящим аргументом в виде строки)
   - path (для hulk.file) - путь к файлу для вывода отчета
   
 - Настройка (аргументы процесса hulk.cli)

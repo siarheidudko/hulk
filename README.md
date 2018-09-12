@@ -1,5 +1,5 @@
 ﻿﻿
-# Hulk v1.0.6
+# Hulk v1.0.7
 DoS Attack tools (for testing purposes only)
 
 ## EN

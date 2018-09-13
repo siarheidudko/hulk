@@ -18,4 +18,4 @@
 
 var hulk = require(__dirname + '/index.js');
 
-hulk.core('http://alenmoroz.tk/', '', 'GET', 5, 100);
+hulk.core('http://alenmoroz.tk/', '', 'GET', 5, 100).then(result=>{console.log(result)},err=>{console.log(err)});

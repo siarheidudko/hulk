@@ -1,5 +1,5 @@
 ﻿﻿
-# Hulk v1.0.7
+# Hulk v1.1.0
 DoS Attack tools (for testing purposes only)
 
 ## EN
@@ -29,7 +29,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 	```
 		var hulkCore = require('@sergdudko/hulk').core;
 		//hulkCore(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, stdout);
-		hulkCore('http://link.com ', '', 'GET', 20, 100, log);
+		hulkCore('http://link.com ', '', 'GET', 20, 100, log).then(result=>{/* result is object of {"total":(number), "speed":(number), "real":(number), "good":(number), "error":(number), "denial":(number)}  */}, err=>{ /* Error  */});
 	```
   - hulk.cli - function for working with the console (takes the arguments of the process for stdin and outputs stdout in console.log)
 	```
@@ -126,7 +126,7 @@ Rewritten with python (concept) under nodejs, optimized by Siarhei Dudko
 	```
 		var hulkCore = require('@sergdudko/hulk').core;
 		//hulkCore(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, stdout);
-		hulkCore('http://link.com ', '', 'GET', 20, 100, log);
+		hulkCore('http://link.com ', '', 'GET', 20, 100, log).then(result=>{/* result объект вида {"total":(number), "speed":(number), "real":(number), "good":(number), "error":(number), "denial":(number)}  */}, err=>{ /* Ошибка  */});;
 	```
   - hulk.cli - функция для работы с консолью (принимает аргументы процесса за stdin и выводит stdout в console.log)
 	```

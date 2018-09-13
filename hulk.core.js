@@ -1,5 +1,5 @@
 /**
- *		HULK v1.0.7
+ *		HULK v1.1.0
  *	https://github.com/siarheidudko/hulk
  *	(c) 2018 by Siarhei Dudko.
  *	https://github.com/siarheidudko/hulk/LICENSE
@@ -22,7 +22,7 @@ url=require("url"),
 colors=require("colors");
 
 module.exports.core = function hulkCore(you_link, this_data, this_method, req_total, req_in_min, stdout){
-	return new Promise(function (resolve){
+	return new Promise(function (resolve, reject){
 		if(typeof(stdout) === 'undefined'){
 			stdout = console.log;
 		}
@@ -146,7 +146,7 @@ module.exports.core = function hulkCore(you_link, this_data, this_method, req_to
 					stdout(colors.yellow('SERVER ERROR:' + req_bad));
 				if(req_very_bad > 0)
 					stdout(colors.red('DENIAL OF SERVICE:' + req_very_bad));
-				resolve('finish');
+				resolve({"total":req_total, "speed":req_in_min, "real":req_good + req_bad + req_very_bad, "good":req_good, "error":req_bad, "denial":req_very_bad});
 			}
 		}
 

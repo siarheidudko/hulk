@@ -1,5 +1,5 @@
 /**
- *		HULK v1.0.6
+ *		HULK v1.1.0
  *	https://github.com/siarheidudko/hulk
  *	(c) 2018 by Siarhei Dudko.
  *	https://github.com/siarheidudko/hulk/LICENSE

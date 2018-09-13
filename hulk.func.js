@@ -1,5 +1,5 @@
 /**
- *		HULK v1.0.6
+ *		HULK v1.1.0
  *	https://github.com/siarheidudko/hulk
  *	(c) 2018 by Siarhei Dudko.
  *	https://github.com/siarheidudko/hulk/LICENSE
@@ -30,12 +30,8 @@ module.exports.func = function hulkFunc(set_you_link, set_this_data, set_this_me
 		AnswerArray.push(data);
 	}
 
-	return hulkCore(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, toFunc).then(function(value){
-		if (value === 'finish') {
-			callback(AnswerArray);
-		} else {
-			throw 'Promise error';
-		}
-	});
+	return hulkCore(set_you_link, set_this_data, set_this_method, set_req_total, set_req_in_min, toFunc).then(value=>{
+		callback(AnswerArray);
+	}, err=>{throw 'Promise error'});
 	
 }

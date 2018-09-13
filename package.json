@@ -1,6 +1,6 @@
 {
 	"name": "@sergdudko/hulk",
-	"version": "1.0.7",
+	"version": "1.1.0",
 	"description": "DoS Attack tools (only for testing yours service)",
 	"main": "index.js",
 	"scripts": {

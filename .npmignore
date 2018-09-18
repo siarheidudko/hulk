@@ -1,5 +1,6 @@
 npm-debug.log
 .gitignore
+.tmp.drivedownload
 test.log
 node_modules
 img

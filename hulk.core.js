@@ -94,7 +94,12 @@ module.exports.core = function hulkCore(you_link, this_data, this_method, req_to
 		getoptions.headers = {};
 		getoptions.headers["Cache-Control"] = 'no-cache';
 		getoptions.headers["Accept-Charset"] = 'ISO-8859-1,utf-8;q=0.7,*;q=0.7';
-		getoptions.headers["Host"] = hostname; 
+		getoptions.headers["Host"] = hostname;
+		try{
+			if(typeof(JSON.parse(this_data)) === 'object'){
+				getoptions.headers["Content-Type"] = 'application/json';
+			}
+		} catch(e){}
 
 		function DoS(req_num){ 
 			try{

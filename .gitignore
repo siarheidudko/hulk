@@ -2,3 +2,4 @@ $ cat .gitignore
 node_modules
 test.log
 npm-debug.log
+.tmp.drivedownload

@@ -1,6 +1,12 @@
 ﻿﻿
 # Hulk v1.1.0
 DoS Attack tools (for testing purposes only)
+  
+[![npm](https://img.shields.io/npm/v/@sergdudko/hulk.svg)](https://www.npmjs.com/package/@sergdudko/hulk)
+[![npm](https://img.shields.io/npm/dy/@sergdudko/hulk.svg)](https://www.npmjs.com/package/@sergdudko/hulk)
+[![NpmLicense](https://img.shields.io/npm/l/@sergdudko/hulk.svg)](https://www.npmjs.com/package/@sergdudko/hulk)
+![GitHub last commit](https://img.shields.io/github/last-commit/siarheidudko/hulk.svg)
+![GitHub release](https://img.shields.io/github/release/siarheidudko/hulk.svg)
 
 ## EN
 
